@@ -1,5 +1,6 @@
-# hello-nginx
-This repository is a short personal introduction to the nginx-project. With this nginx-configuration its possible to handle max around 1k-10k request in parallel (see the notes at the specific configurations).
+# Nginx-Performance-Workshop
+Setup Nginx for hight perfomance requirements.
+Gain insights into optimization strategies for a nginx deployments and scale to around 1k-10k+ request concurrently with just a single instance (see the notes at the specific configurations).
 
 ## Learned
 - basic usage of nginx
