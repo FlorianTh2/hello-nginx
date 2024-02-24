@@ -14,8 +14,7 @@ Since this project was build with docker there is a small amount of prerequisite
 ### Run image from docker-hub
 - run container
 ```
-docker run --name custom-nginx -p 3000:80 -d flooth/nginx-static-site-test:latest
-daeadac9bad678e1f41ff8a17ce07a909dce8452101601e0d30dfd4c7e4934be
+docker run --name my-nginx -p 3000:80 -d <docker-registry-user>/nginx-static-site-test:latest
 ```
 - access localhost:3000
 
@@ -26,7 +25,7 @@ docker build -t custom-nginx .
 ```
 - run image
 ```
-docker run --rm -p 3000:80 --name custom-nginx custom-nginx
+docker run --rm -p 3000:80 --name my-nginx my-nginx
 ```
 - access localhost:3000
 
@@ -34,11 +33,11 @@ docker run --rm -p 3000:80 --name custom-nginx custom-nginx
 ## Important commands
 - tag image (example)
 ```
-docker tag c056598acb45 flooth/nginx-static-site-test
+docker tag c056598acb45 <docker-registry-user>/nginx-static-site-test
 ```
 - push image to docker-hub (example)
 ```
-docker push flooth/nginx-static-site-test
+docker push <docker-registry-user>/nginx-static-site-test
 ```
 
 ## Build with
